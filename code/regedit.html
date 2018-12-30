@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册表界面</title>
+		<style type="text/css">
+			.text{
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="text">深圳实训小调查</h1>
+		<form action="user.jsp" method="post">
+			<table align="center" >
+				<tr>
+					<td>姓名：<input type="text" name="1" id="" value="" maxlength="6" size="9"/></td>
+				</tr>
+				<tr>
+					<td>性别:男<input type="radio" name="sex" vaule="male" checked="checked"/>
+					女<input type="radio" name="sex" vaule="female"/></td>
+				</tr>
+				<tr>
+					<td>
+						所属班级：
+					<select name="class">
+                     <option value="java">JAVA班</option>
+                     <option value="qianduan1">前端1班</option>
+                     <option value="qianduan2">前端2班</option>
+                    </select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						
+							学习的方式：<br/>阅读相关书籍<input type="checkbox" name="Book">
+							网络查阅资料<input type="checkbox" name="Internet"><br />
+							观看相关视频<input type="checkbox" name="video">
+							向老师请教<input type="checkbox" name="teacher">
+					</td>
+				</tr>
+				<tr>
+					<td>你对实训安排的建议:<br/><textarea rows="2" cols="20"></textarea></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" value="提交">
+						<input type="button" value="重置">
+						<input type="button" value="取消">
+					</td>
+				</tr>
+			</table>
+			
+		</form>
+	</body>
+</html>
+<!--必须含有文本输入，单选框，多选框，下拉选择，多行文本，提交按钮，重置按钮，取消按钮，放入表单中-->
